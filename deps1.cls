@@ -10,7 +10,7 @@
 %
 %   Package Imports
 %
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry}
+\usepackage[hmargin=1.5cm, vmargin=1.5cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage[absolute]{textpos} %TPHorizontal....
 \usepackage{anyfontsize} % to control fonts
