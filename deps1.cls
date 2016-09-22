@@ -36,9 +36,9 @@
     \noindent\makebox[\width][l]{#1} \hfill
     \makebox[\width][l]{#2} \\
     \indent
-    \makebox[\width][l]{\textit{#3}} \\
+    \makebox[\width][l]{\textit{#3}} \vspace{5pt}\\
     \noindent
-    \parbox[t][\height][c]{\textwidth}{#4}
+    \parbox[t][\height][c]{\textwidth}{\small{#4}}
     \vspace{-6pt}
 }
 
@@ -46,9 +46,9 @@
     \noindent\makebox[\width][l]{#1} \hfill
     \makebox[\width][l]{#2} \\
     \indent
-    \makebox[\width][l]{\textit{#3}} \\
+    \makebox[\width][l]{\textit{#3}} \vspace{5pt}\\
     \noindent
-    \parbox[t][\height][c]{\textwidth}{#4}
+    \parbox[t][\height][c]{\textwidth}{\small{#4}}
 }
 
 \newcommand{\ProgrammingEntry}[2]{
