@@ -25,7 +25,7 @@
 \vspace{-5pt}
 \begin{spacing}{1}
 \PersonalEntry{\textbullet{} Address}{CERN, 513/2-015, CH-1211, Geneva 23, Switzerland}
-\PersonalEntry{\textbullet{} Phones}{ +33 768 966 437 \textbullet{} +7 910 748 15 14}
+\PersonalEntry{\textbullet{} Phones}{ +33768966437 \textbullet{} +7 910 748 15 14}
 \PersonalEntry{\textbullet{} Email}{\href{vdkhristenko1991@gmail.com}{vdkhristenko1991@gmail.com}}
 \PersonalEntry{\textbullet{} Linkedin}{\urlstyle{same}\url{https://www.linkedin.com/in/viktor-khristenko}}
 \PersonalEntry{\textbullet{} Github}{\urlstyle{same}{https://github.com/vkhristenko}}
@@ -57,16 +57,17 @@
 \ExperienceEntry{\textbf{Software Engineer}}{2017 Sep - Current}{\CreateKeyword{CERN} - European Organization for Nuclear Research, Geneva, Switzerland}{
     \vspace{-10pt}
     \begin{tightitemize}
-        \item \CreateKeyword{Large Scale HEP Data Processing} with Apache Spark. Implemented a Data Source for CERN's ROOT data format. \url{https://www.youtube.com/watch?v=JTMdkSmw0Kc}
-        \item \CreateKeyword{Heterogeneous data processing for CMS Experiment}. Ported CPU-based algorithms to run on Nvidia GPUs
-        \item \CreateKeyword{Employing HPC resources} for HEP data processing. Software distribution and configuration
+        \item \CreateKeyword{DEEP-EST} Project Member - EU initiative to build a modular supercomputing architecture for \CreateKeyword{exascale}
+        \item \CreateKeyword{Large Scale HEP Data Processing} with Apache Spark. \url{https://www.youtube.com/watch?v=JTMdkSmw0Kc} Implemented Apache Spark's Data Source for ROOT file format. The data source was successfully used processing TBs+ datasets in various environments (e.g. cloud and HPC resources)
+        \item \CreateKeyword{Heterogeneous Computing for CMS Experiment}. Modern HPC facilities draw enormous computing power from various accelerators. Within the DEEP-EST project, CMS Hadron and Electromagnetic Calorimeters workflows (CPU only) were ported to CUDA and optimized to target Nvidia V100 GPUs. Minimal viable reproducer was also ported to OpenCL (with FPGA specific extensions) and evaluated using Intel Arria 10 FPGA.
+        \item \CreateKeyword{Employing various HPC resources} (e.g. JSC, Flatiron Institute) for HEP data processing
     \end{tightitemize}
 } \\
 \ExperienceEntry{\textbf{Group Lead - CMS Hadron Calorimeter Data Quality Monitoring Group}}{2014-2017}{\CreateKeyword{CERN} - European Organization for Nuclear Research, Geneva, Switzerland}{
     \vspace{-10pt}
     \begin{tightitemize}
         \item Designed and Implemented Critical \CreateKeyword{Data-driven Quality Control Applications}
-        \item Responsible for Data Certification Process - Validating the Usability of Collected Data by Physics Analyses
+        \item Tuned the runtime performance of applications to target Online CMS/LHC data taking conditions (40MHz collision rate)
     \end{tightitemize}
 } \\
 \ExperienceEntry{\textbf{Deputy Coordinator - CMS Hadron Calorimeter Operations Group}}{2015-2016}{\CreateKeyword{CMS} - Compact Muon Solenoid Experiment @CERN, Geneva, Switzerland}{
@@ -80,12 +81,13 @@
 \ExperienceEntry{\textbf{Graduate Research Assistant}}{2014-Current}{\CreateKeyword{CMS} Experiment \CreateKeyword{@CERN}, Geneva, Switzerland \textbullet{} The University of Iowa, Iowa City, IA, USA}{
     \vspace{-10pt}
     \begin{tightitemize}
-        \item \CreateKeyword{Big Data} Analyses, e.g. \CreateKeyword{Higgs Boson} Searches
+        \item \CreateKeyword{Big Data} Analyses, e.g. \CreateKeyword{Higgs Boson} Searches. Employed various HPC and HTC facilities (e.g. Fermilab, UI, CERN)
         \item Design, construction and analysis of \CreateKeyword{Monte Carlo} Simulations of Particle Detectors using \CreateKeyword{Geant4}
         \item Data Analysis and Operations Support for \CreateKeyword{Fermilab} T-1041 ``CMS Forward Calorimetry R\&D'' Experiment
     \end{tightitemize}
 }
 
+\vspace{10pt}
 \Section{Education}
 \EducationEntry{\textbf{PhD in Physics}}{2012-2017}{The University of Iowa, Iowa City, IA, USA}{
     \vspace{-10pt}
@@ -100,7 +102,14 @@
         \item Dean's List Spring 2010 \& Fall 2010
     \end{tightitemize}
 } \vspace{5pt}\\
-\EducationEntry{\textbf{Department of Cybernetics}}{2008-2009}{Moscow Engineering Physics Institute, Moscow, Russia}{} %\\
+\EducationEntry{\textbf{Department of Cybernetics}}{2008-2009}{Moscow Engineering Physics Institute, Moscow, Russia}{} \vspace{5pt}\\
+\EducationEntry{\textbf{Online Education Certificates}}{}{Coursera}{
+    \vspace{-10pt}
+    \begin{tightitemize}
+        \item Functional Programming in Scala
+        \item Machine Learning: Regression, Classification
+    \end{tightitemize}
+}
 
 %\\
 %\ExperienceEntry{\textbf{Graduate Teaching Assistant}}{2012-Current}{The University of Iowa, Iowa City, IA, USA}{
@@ -144,26 +153,10 @@
 \ProgrammingEntry{\textbf{Languages/etc - Experienced}}{C/C++/STL/Boost/OpenMP/MPI/tbb/CUDA/pthreads/OpenCL/SYCL \textbullet{} Scala \textbullet{} Python \textbullet{} SQL \textbullet{}bash}\\
 \ProgrammingEntry{\textbf{Languages/etc - Familiar}}{asm \textbullet{} Java \textbullet{} Go \textbullet{} Rust \textbullet{} php \textbullet{} Exilir/Erlang}\\
 \ProgrammingEntry{\textbf{Version Control}}{git/mercury}\\
-\ProgrammingEntry{\textbf{Big Data}}{Apache Spark/MapReduce \textbullet{} HDFS \textbullet{} ROOT \textbullet{} TensorFlow/Keras/Scikit-Learn/Graphlab}\\
-\ProgrammingEntry{\textbf{Hardware Design/FPGAs - Familiar}}{Verilog/HLS \textbullet{} Xilinx Vivado/Cadence Xcelium}\\
+\ProgrammingEntry{\textbf{Big Data/Machine Learning}}{Apache Spark/MapReduce \textbullet{} HDFS \textbullet{} ROOT \textbullet{} TensorFlow/Keras/Scikit-Learn/Graphlab}\\
+\ProgrammingEntry{\textbf{Hardware Design/FPGAs - Familiar}}{Verilog/HLS \textbullet{} Xilinx Vivado/Cadence Xcelium \textbullet{} OpenCL}\\
 
-
-\Section{Publications \& Presentations}
-\PresentationEntry{\textbullet{} ``HEP Data Processing with Apache Spark''}{\small{``Spark Summit'', London, Oct. 2018, \url{https://www.youtube.com/watch?v=JTMdkSmw0Kc}}}\\
-\PresentationEntry{\textbullet{} ``Integrating ROOT I/O with Apache Spark''}{\small{``ROOT Users' Workshop'', Sarajevo, Sep 2018, \url{https://indico.cern.ch/event/697389/contributions/3102790/attachments/1712907/2762150/rootio_apache_spark.pdf}}}\\
-\PresentationEntry{\textbullet{} ``spark-root: ROOT I/O for JVM and Applications for Apache Spark''}{\small{``ROOT I/O Workshop'', CERN, Feb 2017}}\\
-\PresentationEntry{\textbullet{} ``10B NMR Powder Pattern Optimized for Distribution of the Quadrupole Parameters''}{\small{``Borate 2011: 7th International Conference on Borate Glasses, Crystals and Melts'' Halifax, NS Canada}}\vspace{5pt}
-
-\small{\begin{tightitemize}
-    \item A.M. Sirunyan, ..., V. Khristenko et al., ``Search for the Higgs Boson Decaying to Two Muons in Proton-Proton Collisions at $\sqrt{s}=13$ TeV'', Physical Review Letters, 14 January 2019, \url{https://doi.org/10.1103/PhysRevLett.122.021801}
-    \item V. Khristenko et al., ``SpectraFit: A New Program to Simulate and Fit Distributed 10B Powder Patterns: Application to Symmetric Trigonal Borons.'', Phys. Chem. Glasses: Eur. J. Glass Sci Technol. B, June 2012, 53 (3), 121-127.
-    \item U. Akgun, ..., V. Khristenko et al., ``Characterization of 1800 Hamamatsu R7600-M4PMTs for CMS HF Calorimeter upgrade'', Journal of Instrumentation, 2014 JINST 9 T06005
-    \item M. Dettmann, ..., V. Khristenko et al., accepted for publication, ``Radiation Hard Plastic Scintillators for a New Generation of Particle Detectors'', JINST\_023P\_0716
-    \item U. Akgun, ..., V. Khristenko et al., ``Quartz Plate Calorimeter Prototype with Wavelength Shifting Fibers'', Journal of Instrumentation, JINST 002P 0412, 2012
-    \item A. Albayrak-Yetkin, ..., V. Khristenko ``Secondary Emission Calorimetry: Fast and Radiation-Hard'', Snowmass White Paper, arXiv: 1307.8051.
-\end{tightitemize}}
-
-\vspace{10pt}
+\vspace{5pt}
 \Section{Athletic Activities}
 \ExperienceEntry{\textbf{Volunteer Assistant Tennis Coach}}{2013-2014}{The University of Iowa Hawkeyes Men's Tennis Team, NCAA Division 1}{} \vspace{-10pt} \\
 \ExperienceEntry{\textbf{Student Athlete}}{2009-2012}{Coe College, Varsity Men's Tennis Team, NCAA Division 3}{
@@ -176,5 +169,24 @@
         \item Team Captain (2011, 2012)
     \end{tightitemize}
 }
+
+\vspace{5pt}
+\Section{Publications \& Presentations}
+\PresentationEntry{\textbullet{} ``CMS Hcal Reconstruction with GPUs''}{\small{``CMS HCAL DPG Meeting'', CERN, Nov. 2019, \href{https://indico.cern.ch/event/858893/contributions/3616860/attachments/1941884/3220135/hcal_dpg_08112019.pdf}{\textbf{presentation link}}}}\\
+\PresentationEntry{\textbullet{} ``CMS Ecal Reconstruction with GPUs''}{\small{``CMS ECAL DPG Meeting'', CERN, Oct. 2019, \href{https://indico.cern.ch/event/851469/contributions/3609268/attachments/1932042/3200250/ecal_dpg_23102019.pdf}{\textbf{presentation link}}}}\\
+\PresentationEntry{\textbullet{} ``HEP Data Processing with Apache Spark''}{\small{``Spark Summit'', London, Oct. 2018, \href{https://www.youtube.com/watch?v=JTMdkSmw0Kc}{\textbf{youtube talk/presentation}}}}\\
+\PresentationEntry{\textbullet{} ``Integrating ROOT I/O with Apache Spark''}{\small{``ROOT Users' Workshop'', Sarajevo, Sep 2018, \href{https://indico.cern.ch/event/697389/contributions/3102790/attachments/1712907/2762150/rootio_apache_spark.pdf}{\textbf{presentation link}}}}\\
+\PresentationEntry{\textbullet{} ``spark-root: ROOT I/O for JVM and Applications for Apache Spark''}{\small{``ROOT I/O Workshop'', CERN, Feb 2017}}\\
+\PresentationEntry{\textbullet{} ``10B NMR Powder Pattern Optimized for Distribution of the Quadrupole Parameters''}{\small{``Borate 2011: 7th International Conference on Borate Glasses, Crystals and Melts'' Halifax, NS Canada}}\vspace{5pt}
+\small{\begin{tightitemize}
+    \item A.M. Sirunyan, ..., V. Khristenko et al., ``Search for the Higgs Boson Decaying to Two Muons in Proton-Proton Collisions at $\sqrt{s}=13$ TeV'', Physical Review Letters, 14 January 2019, \url{https://doi.org/10.1103/PhysRevLett.122.021801}
+    \item V. Khristenko et al., ``SpectraFit: A New Program to Simulate and Fit Distributed 10B Powder Patterns: Application to Symmetric Trigonal Borons.'', Phys. Chem. Glasses: Eur. J. Glass Sci Technol. B, June 2012, 53 (3), 121-127.
+    \item U. Akgun, ..., V. Khristenko et al., ``Characterization of 1800 Hamamatsu R7600-M4PMTs for CMS HF Calorimeter upgrade'', Journal of Instrumentation, 2014 JINST 9 T06005
+    \item M. Dettmann, ..., V. Khristenko et al., accepted for publication, ``Radiation Hard Plastic Scintillators for a New Generation of Particle Detectors'', JINST\_023P\_0716
+    \item U. Akgun, ..., V. Khristenko et al., ``Quartz Plate Calorimeter Prototype with Wavelength Shifting Fibers'', Journal of Instrumentation, JINST 002P 0412, 2012
+    \item A. Albayrak-Yetkin, ..., V. Khristenko ``Secondary Emission Calorimetry: Fast and Radiation-Hard'', Snowmass White Paper, arXiv: 1307.8051.
+\end{tightitemize}}
+
+
 
 \end{document}
